@@ -10,8 +10,7 @@ end
 
 -- The set of global shortcuts we don't want to swap cmd/alt.
 
-global_excludes = Set{ "shift-cmd-tab",
-		       "cmd-tab" }
+global_excludes = Set{ "shift-cmd-tab", "cmd-tab", "cmd-space", "shift-cmd-=", "shift-cmd-m"}
 
 -- The set of apps we want to consider swapping keys for, with some
 -- notable exclusions. The exclusion means that a "cmd-w" will do the
@@ -22,7 +21,6 @@ apps = {
    Terminal = { exclude = Set{ "shift-cmd-[",
                                "shift-cmd-]",
                                "cmd-c",
-                               "cmd-v",
                                "cmd-w",
                                "cmd-1",
                                "cmd-2",
